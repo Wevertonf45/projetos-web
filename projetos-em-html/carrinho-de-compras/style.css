@@ -1,0 +1,196 @@
+:root {
+  /*🎨 Paleta de Cores para Site de Pizzaria*/
+
+  --Vermelho-Tomate: #D62828;
+  /*destaque, botões de compra, chamar atenção.*/
+  --Amarelo-Queijo: #F7B801;
+  /*detalhes, ícones, hover em botões.*/
+  --Verde-Manjericao: #2E7D32;
+  /*para remeter aos ingredientes frescos e dar contraste.*/
+  --Marrom-Massa: #8D6E63;
+  /* fundo de seções ou cards, transmite rusticidade.*/
+  --Bege-Claro: #FFF4E6;
+  /*fundo principal, mantém o site limpo e aconchegante.*/
+
+  /*Sugestão de uso:
+
+Background principal: Bege Claro (#FFF4E6)
+Navbar / Rodapé: Vermelho Tomate (#D62828)
+Botões primários (Comprar / Adicionar ao carrinho): Vermelho Tomate (#D62828) com hover Amarelo Queijo (#F7B801)
+Botões secundários / Detalhes: Verde Manjericão (#2E7D32)
+Cards e boxes de produtos: Bege Claro (#FFF4E6) com detalhes em Marrom Massa (#8D6E63)*/
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+  background-color: var(--Vermelho-Tomate);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 100px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo-container>a {
+  font-size: 30px;
+}
+
+.links-container>a {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 8px;
+  transition: 0.3s ease-in;
+}
+
+.links-container>:hover {
+  background-color: var(--Amarelo-Queijo);
+  color: black;
+  border-radius: 8px;
+}
+
+.button-container>button {
+  background-color: var(--Amarelo-Queijo);
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.button-container>button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+section {
+  padding: 60px 20px;
+  display: flex;
+  border: 1px solid red;
+}
+
+.card-container {
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 250px 250px;
+  gap: 20px;
+}
+
+.cards {
+  border: 1px solid black;
+  height: 450px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.img-container>img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cards > h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.cards > p.desc{
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.preco-container{
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.real{
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.button-container-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.button-container-card > button{
+  padding: 8px;
+  background-color: black;
+  color: white;
+  width: 50%;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s ease-in;
+  font-weight: 600;
+}
+
+.button-container-card > button:hover{
+  background-color: var(--Amarelo-Queijo);
+  color: black;
+}
+
+.resume{
+  border: 1px solid black;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 8px;
+  position: fixed;
+  left: 75%;
+  top: 30%;
+}
+
+.resume > h1{
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sub-total{
+  margin-bottom: 10px;
+}
+
+.T1{
+  display: flex;
+}
+
+.ppp{
+  margin-bottom: 10px;
+  margin-right: 8px;
+}
