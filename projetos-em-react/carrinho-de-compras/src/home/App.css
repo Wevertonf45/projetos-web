@@ -1,0 +1,41 @@
+:root{
+  /*🎨 Paleta de Cores para Site de Pizzaria*/
+
+--Vermelho-Tomate: #D62828;
+/*destaque, botões de compra, chamar atenção.*/
+--Amarelo-Queijo: #F7B801;
+/*detalhes, ícones, hover em botões.*/
+--Verde-Manjericao: #2E7D32;
+/*para remeter aos ingredientes frescos e dar contraste.*/
+--Marrom-Massa: #8D6E63;
+/* fundo de seções ou cards, transmite rusticidade.*/
+--Bege-Claro: #FFF4E6;
+/*fundo principal, mantém o site limpo e aconchegante.*/
+
+
+
+
+
+
+/*Sugestão de uso:
+
+Background principal: Bege Claro (#FFF4E6)
+Navbar / Rodapé: Vermelho Tomate (#D62828)
+Botões primários (Comprar / Adicionar ao carrinho): Vermelho Tomate (#D62828) com hover Amarelo Queijo (#F7B801)
+Botões secundários / Detalhes: Verde Manjericão (#2E7D32)
+Cards e boxes de produtos: Bege Claro (#FFF4E6) com detalhes em Marrom Massa (#8D6E63)
+*/
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--Bege-Claro);
+}

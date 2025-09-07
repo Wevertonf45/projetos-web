@@ -1,0 +1,16 @@
+.button-person{
+  background-color: black;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 70%;
+  cursor: pointer;
+  transition: .3s ease-in;
+}
+
+.button-person:hover{
+  background-color: var(--Amarelo-Queijo);
+  color: black;
+}
