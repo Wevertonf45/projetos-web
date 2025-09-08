@@ -1,11 +1,13 @@
-section{
+section {
+  padding: 60px 20px;
   display: flex;
-  margin: 60px 20px;
 }
 
-.card-container-section{
+
+
+.cards-container{
   display: grid;
   grid-template-columns: 250px 250px;
   gap: 20px;
-  padding: 10px;
 }
+

@@ -2,7 +2,7 @@ import './Button.css'
 
 function Button(props) {
   return (
-    <button className='button-person'>
+    <button onClick={props.onClick}>
       {props.text}
     </button>
   )

@@ -1,0 +1,41 @@
+
+.resume {
+  border: 1px solid black;
+  position: fixed;
+  left: 75%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.resume>h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.subtotal-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.subtotal-container>p.subtotal {
+  margin-right: 8px;
+}
+
+.total-container {
+  display: flex;
+}
+
+.total {
+  margin-right: 8px;
+  font-weight: 600;
+}
+
+.subtotal {
+  font-weight: 600;
+}
+
+.button-resume{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
