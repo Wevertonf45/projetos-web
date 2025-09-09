@@ -1,17 +1,7 @@
-.login-form {
-  display: flex;
-  flex-direction: column;
-  background-color: #023059;
-  width: 400px;
-  padding: 30px;
-  color: white;
-  border-radius: 10px;
-}
+
 
 .login-form>h1 {
-  font-size: 35px;
-  text-align: center;
-  margin-bottom: 15px;
+  
 }
 
 .remember{
@@ -28,10 +18,4 @@ a{
   color: #5AB6E6;
   font-weight: 600;
   text-decoration: none;
-}
-
-.forgot{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
