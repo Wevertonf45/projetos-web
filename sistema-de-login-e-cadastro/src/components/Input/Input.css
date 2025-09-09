@@ -1,0 +1,19 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container>input {
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.input-container > input::placeholder{
+  color: white;
+}
