@@ -1,11 +1,9 @@
 import './Button.css'
 
-function Button (props) {
+function Button(props) {
   return (
     <div className="button-container">
-    <button>
-      {props.text}
-    </button>
+      <button type='submit'>{props.text}</button>
     </div>
   )
 }

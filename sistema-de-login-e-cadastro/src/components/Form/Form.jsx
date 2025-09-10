@@ -22,10 +22,10 @@ function Form(props) {
         </div>
       )}
 
-      <Button text='Entrar' />
+      <Button text='Entrar'/>
 
       <div className='forgot'>
-        {props.showGologin && <p>Não tem uma conta? <Link to='cadastro'>Cadastre-se!</Link></p>}
+        {props.showGo && <p>{props.text}<Link to={props.to}>{props.text2}</Link></p>}
       </div>
 
     </form>

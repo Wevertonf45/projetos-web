@@ -8,7 +8,8 @@ function Login() {
       showUser
       showPassword
       showRemember
-      showGologin
+      showGo text='Não tem uma conta? ' to='/cadastro' text2='Cadastre-se!'
+      
     />
   )
 }
