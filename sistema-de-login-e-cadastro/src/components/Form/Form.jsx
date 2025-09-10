@@ -2,7 +2,7 @@ import Button from '../Button/Button'
 import Input from '../Input/Input'
 import { Link } from 'react-router-dom'
 
-import './form.css'
+import './Form.css'
 
 function Form(props) {
   return (
