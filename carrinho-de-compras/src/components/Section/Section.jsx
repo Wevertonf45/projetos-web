@@ -1,7 +1,7 @@
 import { produtos } from '../../data/produtos'
 import ProductCard from "../ProductCard/ProductCard"
 import Resume from '../ResumeCard/Resume'
-import './section.css'
+import './Section.css'
 
 function Section({ comprar, subtotal, total }) {
   return (
