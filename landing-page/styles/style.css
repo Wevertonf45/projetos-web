@@ -38,7 +38,7 @@ header {
   padding: 0 30px;
 }
 
-.logo-container > p {
+.logo-container>p {
   font-weight: 600;
   font-size: 30px;
 }
@@ -67,14 +67,14 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.text-container > h2 {
+.text-container>h2 {
   font-size: 65px;
   margin-bottom: 20px;
   font-weight: 800;
   line-height: 70px;
 }
 
-.text-container-about > h2 {
+.text-container-about>h2 {
   font-size: 65px;
   margin-bottom: 20px;
   font-weight: 800;
@@ -84,7 +84,7 @@ header {
   padding: 10px;
 }
 
-.button-container > button {
+.button-container>button {
   background: linear-gradient(to right, var(--Roxo), var(--Rosa-Forte));
   padding: 8px 16px;
   border: none;
@@ -114,7 +114,7 @@ header {
   padding: 80px;
 }
 
-.text-container-about > h2 {
+.text-container-about>h2 {
   font-size: 30px;
   text-align: justify;
   font-weight: 900;
@@ -139,13 +139,13 @@ header {
   width: 45%;
 }
 
-.text-container-3 > h2 {
+.text-container-3>h2 {
   color: var(--Roxo);
   font-size: 55px;
   margin-bottom: 25px;
 }
 
-.text-container-3 > p {
+.text-container-3>p {
   margin-bottom: 45px;
   font-size: 25px;
 }
@@ -165,13 +165,13 @@ header {
   width: 50%;
 }
 
-.text-container-4 > h2 {
+.text-container-4>h2 {
   color: var(--Roxo);
   margin-bottom: 50px;
   font-size: 50px;
 }
 
-.text-container-4 > p {
+.text-container-4>p {
   margin-bottom: 30px;
   font-size: 20px;
 }
@@ -190,15 +190,84 @@ header {
   width: 50%;
 }
 
-.text-container-5 > h2 {
+.text-container-5>h2 {
   color: var(--Roxo);
   font-size: 45px;
   margin-bottom: 30px;
 }
 
-.text-container-5 > p {
+.text-container-5>p {
   font-size: 20px;
   margin-bottom: 40px;
 }
 
 /* Footer */
+footer{
+  padding: 40px;
+}
+
+footer > h2{
+  text-align: center;
+  font-size: 50px;
+  color: var(--Roxo);
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 50px;
+}
+
+.contact-info {
+  max-width: 300px;
+}
+
+.contact-info p {
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var();
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #ccc;
+}
+
+.button-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-form-container button {
+  padding: 12px 30px;
+  border: none;
+  background: var(--Roxo);
+  color: #000;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease-in;
+}
+
+.button-form-container button:hover {
+  background: var(--Rosa-Forte);
+}

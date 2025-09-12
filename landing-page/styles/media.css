@@ -35,4 +35,9 @@
     max-width: 250px;
     margin: 20px auto;
   }
+
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+  }
 }
