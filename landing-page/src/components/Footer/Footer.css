@@ -1,0 +1,21 @@
+footer{
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+.logo-footer{
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.text-footer > h2{
+  color: var(--Roxo);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.text-footer>p{
+  margin-bottom: 30px;
+}
