@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+  .section-hero,
+  .section3,
+  .section4,
+  .section5,
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .text-container,
+  .text-container-3,
+  .text-container-4,
+  .text-container-5 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .text-container > h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .text-container-3 > h2,
+  .text-container-4 > h2,
+  .text-container-5 > h2 {
+    font-size: 30px;
+  }
+
+  .img-container img,
+  .img-container-3 img,
+  .img-container-4 img,
+  .img-container-5 img {
+    max-width: 250px;
+    margin: 20px auto;
+  }
+}
