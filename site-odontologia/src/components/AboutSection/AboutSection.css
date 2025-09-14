@@ -1,0 +1,29 @@
+.about-section {
+  background-color: var(--azul-escuro);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container-about {
+  width: 40%;
+}
+
+.text-container-about>h2 {
+  color: var(--verde);
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+.text-container-about >p{
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.card-container {
+  width: 40%;
+}
+
+.icon-container-about{
+  font-size: 80px;
+}

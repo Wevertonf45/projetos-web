@@ -1,0 +1,49 @@
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bege);
+}
+
+.info-container-hero {
+  width: 40%;
+}
+
+.info-container-hero>h1 {
+  color: var(--verde);
+  margin-bottom: 25px;
+  line-height: 55px;
+  overflow-y: hidden;
+  font-size: 4rem;
+}
+
+.info-container-hero>h2 {
+  color: var(--azul-escuro);
+  margin-bottom: 25px;
+}
+
+.info-container-hero>p {
+  color: var(--azul-escuro);
+  margin-bottom: 25px;
+}
+
+.img-hero-container {
+  width: 45%;
+}
+
+.img-hero-container>img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.button-hero {
+  background-color: var(--verde);
+  color: white;
+  border: 1px solid white;
+}
+
+.button-hero:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
