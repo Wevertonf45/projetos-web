@@ -1,11 +1,11 @@
 import { produtos } from '../../data/produtos'
 import ProductCard from "../ProductCard/ProductCard"
-import Resume from '../ResumeCard/Resume'
 import './Section.css'
 
 function Section({ comprar, subtotal, total }) {
   return (
     <section>
+      <h2>Nosso Menu</h2>
       <div className="cards-container">
         {produtos.map((item, index) => (
           <ProductCard
@@ -17,10 +17,6 @@ function Section({ comprar, subtotal, total }) {
             onComprar={() => comprar(item.value)}
           />
         ))}
-      </div>
-
-      <div className="resume-container">
-        <Resume subtotal={subtotal} total={total} />
       </div>
     </section>
   )

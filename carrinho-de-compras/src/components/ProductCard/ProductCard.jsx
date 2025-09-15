@@ -19,7 +19,7 @@ function ProductCard(props) {
       </div>
 
       <div className="button-container-card">
-        <Button onClick={props.onComprar} text='Comprar'/>
+        <Button onClick={props.onComprar} text='Adicionar'/>
       </div>
     </div>
   )

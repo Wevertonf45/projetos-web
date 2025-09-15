@@ -4,6 +4,7 @@ import { useCarrinho } from '../hooks/useCarrinho'
 //Imports componentes
 import NavBar from '../components/NavBar/NavBar'
 import Section from '../components/Section/Section'
+import HeroSection from '../components/HeroSection/HeroSection'
 
 //Outros imports
 import './App.css'
@@ -16,7 +17,8 @@ function App() {
       <NavBar />
 
       <main>
-        <Section comprar={comprar} subtotal={subtotal} total={total}/>
+        <HeroSection />
+        <Section comprar={comprar} subtotal={subtotal} total={total} />
       </main>
     </>
   )

@@ -1,13 +1,20 @@
 section {
   padding: 60px 20px;
-  display: flex;
+  font-family: 'Poppins';
+}
+
+section>h2{
+  font-family: serif;
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 40px;
+  color: var(--Amarelo-Queijo);
 }
 
 
-
 .cards-container{
-  display: grid;
-  grid-template-columns: 250px 250px;
-  gap: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 

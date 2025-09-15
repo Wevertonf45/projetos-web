@@ -1,4 +1,6 @@
 import './NavBar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 function NavBar() {
   return (
@@ -14,6 +16,11 @@ function NavBar() {
           <a href="#">Produtos</a>
           <a href="#">Serviços</a>
           <a href="#">Contatos</a>
+        </div>
+
+        <div className="cart-container">
+          <span>0</span>
+          <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
         </div>
       </nav>
     </header>
