@@ -1,4 +1,4 @@
-.card-about{
+.card-about {
   background-color: #fff;
   margin-bottom: 20px;
   border-radius: 16px;
@@ -6,14 +6,20 @@
   width: 450px;
 }
 
-.card-about>h1{
+.card-about>h1 {
   color: var(--verde);
   font-size: 25px;
   margin-bottom: 25px;
   text-align: center;
 }
 
-.card-about> p{
+.card-about>p {
   color: var(--azul-escuro);
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 480px) {
+  .card-about{
+    width: 300px;
+  }
 }
