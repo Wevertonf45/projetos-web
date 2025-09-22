@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    color: white;
+    width: 320px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+form>h2 {
+    background-color: var(--azul-marinho);
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}

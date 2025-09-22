@@ -1,0 +1,9 @@
+.list>h1 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.users-list{
+    padding: 30px;
+    list-style: none;
+}
