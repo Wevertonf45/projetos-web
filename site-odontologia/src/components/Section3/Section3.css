@@ -28,3 +28,18 @@
   color: var(--azul-escuro);
   font-weight: 600;
 }
+
+@media screen and (min-width: 350px) and (max-width:780px){
+  .section3{
+    flex-direction: column;
+  }
+
+  .img-container-3{
+    width: 100%;
+  }
+
+  .text-container-3{
+    width: 100%;
+    margin: 80px 0 0 0;
+  }
+}

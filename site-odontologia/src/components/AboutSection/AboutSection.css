@@ -27,3 +27,30 @@
 .icon-container-about{
   font-size: 80px;
 }
+
+@media screen and (min-width: 350px) and (max-width:780px){
+  .about-section{
+    flex-direction: column;
+  }
+
+  .text-container-about{
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .text-container-about>h2{
+    text-align: center;
+  }
+
+  .icon-container-about{
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
