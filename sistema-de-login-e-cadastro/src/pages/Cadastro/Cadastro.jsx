@@ -7,9 +7,9 @@ import './Cadastro.css'
 function Cadastro() {
     return (
         <Form title='Cadastrar-se:'>
-            <Input placeholder='Nome:' />
-            <Input placeholder='Email:' />
-            <Input placeholder='Senha:' />
+            <Input placeholder='Nome:' icon='👤' />
+            <Input placeholder='Email:' icon='✉️' />
+            <Input placeholder='Senha:' icon='🔒' />
             <Button className='button-cadastro' text='Cadastrar'/>
             <LKN to='/login' text='Já tem uma conta? Faça login!'/>
         </Form>
