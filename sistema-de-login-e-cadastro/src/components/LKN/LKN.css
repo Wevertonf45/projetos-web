@@ -1,0 +1,16 @@
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.links>a{
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.links>a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,58 @@
+.main-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins';
+    word-spacing: 10px;
+}
+
+.home-text{
+    width: 50%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.home-text>h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home-text>p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#wvt{
+    color: var(--amarelo);
+}
+
+.buttons-home{
+    display: flex;
+}
+
+.entrar{
+    background-color: var(--amarelo);
+    margin-right: 20px;
+}
+
+.entrar:hover{
+    background-color: white;
+}
+
+.cadas{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.cadas:hover{
+    background-color: var(--amarelo);
+    color: black;
+    border: 1px solid var(--amarelo);
+}
+
+a{
+    text-decoration: none;
+}

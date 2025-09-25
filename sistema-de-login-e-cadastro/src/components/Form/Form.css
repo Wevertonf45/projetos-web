@@ -1,0 +1,21 @@
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container>form {
+    background-color: white;
+    width: 380px;
+    border-radius: 10px;
+}
+
+.form-container>form>h1 {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 10px 10px 0 0;
+}

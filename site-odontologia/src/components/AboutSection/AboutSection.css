@@ -6,7 +6,8 @@
 }
 
 .text-container-about {
-  width: 40%;
+  width: 500px;
+  border: 1px solid red;
 }
 
 .text-container-about>h2 {
@@ -21,7 +22,7 @@
 }
 
 .card-container {
-  width: 40%;
+  width: 500px;
 }
 
 .icon-container-about{

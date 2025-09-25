@@ -1,0 +1,10 @@
+.button-cadastro{
+    background-color: #000080;
+    color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.button-cadastro:hover{
+    background-color: #1976d2;
+}

@@ -1,12 +1,14 @@
 .hero-section {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   background-color: var(--bege);
 }
 
 .info-container-hero {
-  width: 40%;
+  width: 450px;
+  border: 1px solid red;
 }
 
 .info-container-hero>h1 {
@@ -28,11 +30,12 @@
 }
 
 .img-hero-container {
-  width: 45%;
+  border: 1px solid red;
+  width: 550px;
 }
 
 .img-hero-container>img {
-  width: 100%;
+  min-width: 100%;
   border-radius: 16px;
 }
 
@@ -48,9 +51,9 @@
   border: 1px solid black;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:570px) {
   .img-hero-container {
-    display: none;
+    margin: 15px 0 0 0;
   }
 
   .info-container-hero {
