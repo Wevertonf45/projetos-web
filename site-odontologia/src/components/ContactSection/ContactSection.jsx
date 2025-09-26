@@ -6,8 +6,8 @@ function ContactSection() {
         <TemplateSection className='contact-section'>
             <h2>CONTATO:</h2>
 
-            <div class="contact-container">
-                <div class="contact-info">
+            <div className="contact-container">
+                <div className="contact-info">
                     <p> Rua fulano de tal, 989 - Centro</p>
                     <p> email@gmail.com</p>
                     <p>(55) 9999-9999</p>
@@ -16,11 +16,11 @@ function ContactSection() {
                     <p> Domingo: Closed</p>
                 </div>
 
-                <form class="contact-form">
+                <form className="contact-form">
                     <input type="text" placeholder="Your name" required />
                     <input type="email" placeholder="Your email" required />
                     <textarea placeholder="Your message" rows="5" required></textarea>
-                    <div class="button-form-container">
+                    <div className="button-form-container">
                         <button type="submit">Submit</button>
                     </div>
                 </form>

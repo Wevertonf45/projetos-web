@@ -1,26 +1,20 @@
 .hero-section {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
   background-color: var(--bege);
-  overflow: hidden;
 }
 
 .info-container-hero {
-  display: flex;
-  width: 450px;
-  flex-direction: column;
-  flex-shrink: 1;
-  flex-grow: 1;
+  width: 400px;
 }
 
 .info-container-hero>h1 {
   color: var(--verde);
   margin-bottom: 25px;
   line-height: 55px;
-  overflow-y: hidden;
-  font-size: 4rem;
+  overflow: hidden;
+  font-size: 3rem;
 }
 
 .info-container-hero>h2 {
@@ -35,13 +29,12 @@
 
 .img-hero-container {
   width: 450px;
-  display: flex;
 }
 
 .img-hero-container>img {
   border-radius: 16px;
-  display: block;
   width: 100%;
+  display: block;
 }
 
 .button-hero {
