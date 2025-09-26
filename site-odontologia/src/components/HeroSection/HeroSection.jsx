@@ -11,7 +11,7 @@ function HeroSection() {
         <h1>Dra. Carla Santos</h1>
         <h2>ODONTOLOGIA GERAL E ESTÉTICA</h2>
         <p>Por mais de uma década, a Dra. Santos tem oferecido atendimento de alta qualidade a milhares de pacientes que podem atestar seu foco, diligência e genuína paixão pela odontologia.</p>
-        <Button text='Ver serviços' className='button-hero'/>
+        <div className='btn-hero'><Button text='Ver serviços' className='button-hero'/></div>
       </div>
 
       <div className="img-hero-container">

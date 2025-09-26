@@ -2,11 +2,11 @@
     .hero-section {
         flex-direction: column;
         justify-content: center;
-        padding: 30px;
+        padding: 40px 10px;
     }
 
     .info-container-hero {
-        width: 200px;
+        max-width: 300px;
         margin-bottom: 20px;
     }
 
@@ -19,6 +19,7 @@
 
     .info-container-hero>h2 {
         font-size: 12px;
+        text-align: center;
     }
 
     .info-container-hero>p {
@@ -26,11 +27,17 @@
         word-spacing: 10px;
     }
 
-    .button-hero{
+    .button-hero {
         padding: 1;
     }
 
-    .img-hero-container{
+    .img-hero-container {
         width: 250px;
+    }
+
+    .btn-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
