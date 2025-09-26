@@ -2,6 +2,7 @@
   padding: 40px;
   background-color: var(--azul-escuro);
   color: white;
+  display: none;
 }
 
 .contact-section > h2{

@@ -1,7 +1,7 @@
 .about-section {
   background-color: var(--azul-escuro);
   color: white;
-  display: flex;
+  display: none;
   justify-content: space-between;
 }
 

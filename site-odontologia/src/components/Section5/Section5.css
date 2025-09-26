@@ -1,5 +1,5 @@
 .section5 {
-    display: flex;
+    display: none;
     justify-content: space-between;
     background-color: var(--azul-escuro);
     padding: 0;

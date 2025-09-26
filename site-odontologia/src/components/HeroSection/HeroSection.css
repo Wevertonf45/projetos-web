@@ -4,13 +4,15 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--bege);
+  overflow: hidden;
 }
 
 .info-container-hero {
-  border: 1px solid red;
   display: flex;
+  width: 450px;
   flex-direction: column;
-  flex: 1 1 450px;
+  flex-shrink: 1;
+  flex-grow: 1;
 }
 
 .info-container-hero>h1 {
@@ -32,10 +34,8 @@
 }
 
 .img-hero-container {
-  border: 1px solid red;
-  overflow: hidden;
+  width: 450px;
   display: flex;
-  flex: 1 1 450px;
 }
 
 .img-hero-container>img {
