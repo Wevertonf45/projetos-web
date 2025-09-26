@@ -7,8 +7,10 @@
 }
 
 .info-container-hero {
-  width: 450px;
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 450px;
 }
 
 .info-container-hero>h1 {
@@ -31,12 +33,15 @@
 
 .img-hero-container {
   border: 1px solid red;
-  width: 550px;
+  overflow: hidden;
+  display: flex;
+  flex: 1 1 450px;
 }
 
 .img-hero-container>img {
-  min-width: 100%;
   border-radius: 16px;
+  display: block;
+  width: 100%;
 }
 
 .button-hero {
@@ -49,27 +54,4 @@
   background-color: transparent;
   color: black;
   border: 1px solid black;
-}
-
-@media screen and (max-width:570px) {
-  .img-hero-container {
-    margin: 15px 0 0 0;
-  }
-
-  .info-container-hero {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .info-container-hero>h1{
-    text-align: center;
-    font-size: 35px;
-  }
-
-  .info-container-hero>h2{
-    font-size: 18px;
-  }
 }
