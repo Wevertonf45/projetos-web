@@ -1,5 +1,5 @@
 .section5 {
-    display: none;
+    display: flex;
     justify-content: space-between;
     background-color: var(--azul-escuro);
     padding: 0;
@@ -36,23 +36,23 @@
 @media screen and (max-width:480px) {
     .section5 {
         flex-direction: column-reverse;
-    }
-
-    .text-container-5{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
-    .text-container-5>h1{
-        font-size: 25px;
+    .text-container-5 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text-container-5>h1 {
+        font-size: 30px;
     }
 
     .img-5 {
-        width: 100%;
-        background-size: 600px;
-        background-size: 480px;
-        margin-bottom: -90px;
+       width: 100%;
+        height: 400px;
+        background-size: contain;
+        background-size: 360px;
     }
 }

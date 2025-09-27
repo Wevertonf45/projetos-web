@@ -2,7 +2,6 @@
   padding: 40px;
   background-color: var(--azul-escuro);
   color: white;
-  display: none;
 }
 
 .contact-section > h2{
@@ -77,9 +76,23 @@
   color: white;
 }
 
-@media screen and (min-width: 350px) and (max-width:780px){
-  .contact-container{
-    display: flex;
+@media (max-width: 480px) {
+  .contact-container {
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .contact-info p {
+    font-size: 12px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
 }

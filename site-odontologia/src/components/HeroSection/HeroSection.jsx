@@ -1,7 +1,6 @@
 import TemplateSection from '../TemplateSection/TemplateSection'
 import ImgHero from '../../assets/img-hero.jpg'
 import './HeroSection.css'
-import './MediaScreenHero.css'
 import Button from '../Button/Button'
 
 function HeroSection() {

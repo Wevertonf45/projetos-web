@@ -2,7 +2,6 @@ import TemplateSection from '../TemplateSection/TemplateSection'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTooth } from '@fortawesome/free-solid-svg-icons';
 import './AboutSection.css'
-import './MediaAbout.css'
 import AboutCard from '../Cards/AboutCard';
 
 function AboutSection() {

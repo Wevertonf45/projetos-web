@@ -1,5 +1,5 @@
 .section4 {
-    display: none;
+    display: flex;
     justify-content: space-between;
     background-color: #97dded;
     padding: 0;
@@ -33,31 +33,32 @@
     color: var(--azul-escuro);
 }
 
-@media screen and (max-width:480px) {
+@media (max-width: 480px) {
     .section4 {
         flex-direction: column;
-        overflow: hidden;
+        align-items: center;
+        text-align: center;
+        padding: 0;
     }
 
     .text-container-4 {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding: 40px 20px;
     }
 
     .text-container-4>h1 {
-        text-align: center;
-        font-size: 25px;
+        font-size: 24px;
     }
 
-    .text-container-4>p{
+    .text-container-4>p {
+        font-size: 16px;
         text-align: justify;
     }
 
     .img-4 {
         width: 100%;
-        background-size: 480px;
-        margin-bottom: -90px;
+        height: 400px;
+        background-size: contain;
+        background-size: 360px;
     }
 }

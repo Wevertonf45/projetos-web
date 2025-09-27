@@ -48,3 +48,48 @@
   color: black;
   border: 1px solid black;
 }
+
+/* RESPONSIVIDAE */
+@media (max-width: 480px) {
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px 10px;
+    }
+
+    .info-container-hero {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .info-container-hero>h1 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .info-container-hero>h2 {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .info-container-hero>p {
+        font-size: 12px;
+        word-spacing: 10px;
+    }
+
+    .button-hero {
+        padding: 1;
+    }
+
+    .img-hero-container {
+        width: 250px;
+    }
+
+    .btn-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

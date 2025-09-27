@@ -1,4 +1,3 @@
-import './AboutCard.css'
 
 function AboutCard(props) {
   return (
