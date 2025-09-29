@@ -10,7 +10,7 @@ function Cadastro() {
             <Input placeholder='Nome:' icon='👤' />
             <Input placeholder='Email:' icon='✉️' />
             <Input placeholder='Senha:' icon='🔒' />
-            <Button className='button-cadastro' text='Cadastrar'/>
+            <Button type='submit' className='button-cadastro' text='Cadastrar'/>
             <LKN to='/login' text='Já tem uma conta? Faça login!'/>
         </Form>
     )
