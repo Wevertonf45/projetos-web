@@ -1,10 +1,10 @@
 import './Input.css'
 
-function Input(props) {
+function Input({ type, placeholder, icon, register, name }) {
     return (
         <div className='input-container'>
-            <span className='icon'>{props.icon}</span>
-            <input type={props.type} placeholder={props.placeholder} />
+            <span className='icon'>{icon}</span>
+            <input type={type} placeholder={placeholder} {...register(name)} />
         </div>
     )
 }

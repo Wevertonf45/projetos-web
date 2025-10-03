@@ -1,9 +1,9 @@
 import './Form.css'
 
-function Form({ title, children }) {
+function Form({ title, children, onSubmit }) {
     return (
         <main className='form-container'>
-            <form>
+            <form onSubmit={onSubmit}>
                 <h1>{title}</h1>
                 {children}
             </form>
