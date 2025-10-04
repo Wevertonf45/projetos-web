@@ -1,39 +1,38 @@
-import Button from '../../components/Button/Button'
-import Form from '../../components/Form/Form'
-import Input from '../../components/Input/Input'
-import LKN from '../../components/LKN/LKN'
+//Bibliotecas
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import * as yup from 'yup'
-import api from '../../services/api'
 import { useNavigate } from 'react-router-dom'
+
+//Serviços
+import api from '../../services/api.js'
+
+//Schema de validação
+import {schema} from '../../validations/CadastroSchema.js'
+
+//Componentes
+import { Button, Form, Input, LKN } from '../../components'
+
+//Estilos CSS
 import './Cadastro.css'
 
+
+
 function Cadastro() {
+    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) })
     const navigator = useNavigate()
 
-    const schema = yup.object({
-        name: yup.string().required('O nome é obrigatório!'),
-        email: yup.string().email('Informe um email válido!').required('O email é obrigatório!'),
-        password: yup.string().required('A senha é obrigatória!')
-    })
-
-
-    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema) })
 
     async function enviar(data) {
-        try {
-            await api.post('/cadastro', data)
-            alert('Sucesso ao cadastrar!')
-            navigator('/login')
+    try {
+        await api.post('/cadastro', data)
+        alert('Sucesso ao cadastrar!')
+        navigator('/login')
 
 
-        } catch (err) {
-            alert('Erro ao cadastrar!')
-        }
+    } catch (err) {
+        alert('Erro ao cadastrar!')
     }
-
-
+}
 
     return (
         <Form title='Cadastrar-se:' onSubmit={handleSubmit(enviar)}>

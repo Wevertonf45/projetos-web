@@ -3,7 +3,7 @@ import './NavBar.css'
 function NavBar() {
     return (
         <header>
-            <nav class="space-x-4">
+            <nav>
                 <div className='logo-container'>
                     <p>WVT_System</p>
                 </div>
