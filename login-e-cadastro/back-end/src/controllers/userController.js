@@ -6,7 +6,6 @@ import User from '../models/User.js'
 import jwt from 'jsonwebtoken'
 
 const JWT_SECRET = process.env.JWT_SECRET
-console.log("🔐 Valor de JWT_SECRET:", process.env.JWT_SECRET)
 
 
 //Rota para cadastrar usuário
@@ -77,7 +76,7 @@ export const login = async (req, res) => {
         }
 
         //Token JWT
-        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1d' })
+        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '5m' })
 
         //Responder
         return res.status(200).json({
@@ -88,6 +87,29 @@ export const login = async (req, res) => {
 
     } catch (err) {
         console.error("Erro no login:", err)
+        return res.status(500).json({ message: 'Erro no servidor!' })
+    }
+}
+
+
+//Rota para listar usuários
+export const listar = async (req, res) => {
+    try {
+        //Acessar o banco de dados
+        const users = await User.findAll({
+            attributes: ['id', 'name', 'email']
+        })
+
+        //Verificar se existe usuários
+        if (users.length === 0) {
+            return res.status(404).json({ message: 'Nenhum usuário encontrado!' });
+        }
+
+        //Responder
+        return res.status(200).json({ users })
+
+    } catch (err) {
+        console.error('Erro ao listar usuários:', err);
         return res.status(500).json({ message: 'Erro no servidor!' })
     }
 }

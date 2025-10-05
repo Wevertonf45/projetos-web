@@ -1,0 +1,45 @@
+.listar-container{
+    padding: 45px 2rem;
+    height: auto;
+    min-height: 100vh;
+    background: linear-gradient(to top, #0d47a1, #1976d2);
+
+}
+
+.listar-container>h1{
+    margin: 0 0 40px 0;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+.users-container{
+    background-color: #0d3f8b;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.user{
+    height: 20px;
+    width: 33%;
+    text-align: center;
+}
+
+.desc{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.iten{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: 600;
+}

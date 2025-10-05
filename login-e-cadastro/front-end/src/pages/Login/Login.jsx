@@ -15,7 +15,7 @@ function Login() {
             const login = await api.post('/login', data)
             const token = login.data.token
             localStorage.setItem('token', token)
-            navigate('/')
+            navigate('/listar')
 
             
         } catch (err) {
