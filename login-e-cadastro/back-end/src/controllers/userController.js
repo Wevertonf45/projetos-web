@@ -1,111 +1,114 @@
-//Configuração do Prisma
-import { PrismaClient } from "@prisma/client"
-const prisma = new PrismaClient()
-
-//Configuração do JWT
-import jwt from 'jsonwebtoken'
-const JWT_SECRET = process.env.JWT_SECRET
-
-//Outras importações
-import bcrypt from 'bcrypt'
+//Importações
+import connection from '../config/database.js';
+import bcrypt from 'bcrypt';
 
 
-//Rota para cadastrar usuário
+//Configurações do JWT
+import jwt from 'jsonwebtoken';
+const JWT_SECRET = process.env.JWT_SECRET;
+
+
+// Rota para cadastrar usuário
 export const register = async (req, res) => {
     try {
-        //Salvar a requisição
-        const { name, email, password } = req.body
+        //Salvar a requição
+        const { name, email, password } = req.body;
 
-        //Verificar os dados
+        //Verificar os campos
         if (!name || !email || !password) {
-            return res.status(400).json({ message: 'Preencha todos os campos!' })
+            return res.status(400).json({ message: 'Preencha todos os campos!' });
         }
 
-        //Criptografar a senha
-        const hashedPassword = await bcrypt.hash(password, 10)
+        // Verifica se o email já existe
+        const [existingUser] = await connection.execute(
+            'SELECT * FROM users WHERE email = ?',
+            [email]
+        );
 
-        //Acessar o banco de dados
-        const user = await prisma.users.create({
-            data: { name, email, password: hashedPassword }
-        })
+        if (existingUser.length > 0) {
+            return res.status(409).json({ message: 'E-mail já cadastrado!' });
+        }
+
+        // Criptografa a senha
+        const hashedPassword = await bcrypt.hash(password, 10);
+
+        // Insere o novo usuário
+        await connection.execute(
+            'INSERT INTO users (name, email, password) VALUES (?, ?, ?)',
+            [name, email, hashedPassword]
+        );
 
         //Responder
         return res.status(201).json({
             message: 'Usuário cadastrado com sucesso!',
-            user: { id: user.id, name: user.name, email: user.email }
-        })
+            user: { name, email },
+        });
 
     } catch (error) {
-        //Verificar email duplicado
-        if (error.code === 'P2002') {
-            return res.status(409).json({ message: 'E-mail já cadastrado!' })
-        }
-
-        return res.status(500).json({ message: 'Erro no servidor!' })
+        console.error(error);
+        return res.status(500).json({ message: 'Erro no servidor!' });
     }
-}
+};
 
-
-//Rota para fazer login
+// Rota para fazer login
 export const login = async (req, res) => {
     try {
         //Salvar a requisição
-        const { email, password } = req.body
+        const { email, password } = req.body;
 
-        //Verificar os campos
+        //Verifica as informações
         if (!email || !password) {
-            return res.status(400).json({ message: 'Preencha todos os campos!' })
+            return res.status(400).json({ message: 'Preencha todos os campos!' });
         }
 
-        //Acessar o banco de dados
-        const user = await prisma.users.findUnique({
-            where: { email }
-        })
+        // Busca o usuário pelo email
+        const [rows] = await connection.execute(
+            'SELECT * FROM users WHERE email = ?',
+            [email]
+        );
 
-        //Verificar se o usuário não existe
+        const user = rows[0];
+
         if (!user) {
-            return res.status(404).json({ message: 'E-mail não cadastrado!' })
+            return res.status(404).json({ message: 'E-mail não cadastrado!' });
         }
 
-        //Verificar a senha
-        const senha = bcrypt.compare(password, user.password)
-        if (!senha) {
-            return res.status(401).json({ message: 'Senha inválida!' })
+        // Verifica a senha
+        const senhaCorreta = await bcrypt.compare(password, user.password);
+        if (!senhaCorreta) {
+            return res.status(401).json({ message: 'Senha inválida!' });
         }
 
-        //Token JWT
-        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1h' })
+        // Gera o token JWT
+        const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: '1h' });
 
         //Responder
         return res.status(200).json({
-            message: 'Login efetuado com sucesso',
+            message: 'Login efetuado com sucesso!',
             token,
-            user: { id: user.id, name: user.name, email: user.email }
-        })
+            user: { id: user.id, name: user.name, email: user.email },
+        });
 
     } catch (error) {
-        return res.status(500).json({ message: 'Erro no servidor!' })
+        console.error(error);
+        return res.status(500).json({ message: 'Erro no servidor!' });
     }
-}
+};
 
-
-//Rota para listar usuários
+// Rota para listar usuários
 export const list = async (req, res) => {
     try {
-        //Acessar o banco de dados
-        const users = await prisma.users.findMany({
-            select: { id: true, name: true, email: true, }
-        })
+        const [users] = await connection.execute(
+            'SELECT id, name, email FROM users'
+        );
 
-        //Verificar se existe usuários
         if (users.length === 0) {
-            return res.status(404).json({ message: 'Nenhum usuário cadastrado!' })
+            return res.status(404).json({ message: 'Nenhum usuário cadastrado!' });
         }
 
-        //Responder
-        return res.status(200).json({ users })
-
+        return res.status(200).json({ users });
     } catch (error) {
-        return res.status(500).json({ message: 'Erro no servidor!' })
+        console.error(error);
+        return res.status(500).json({ message: 'Erro no servidor!' });
     }
-}
+};

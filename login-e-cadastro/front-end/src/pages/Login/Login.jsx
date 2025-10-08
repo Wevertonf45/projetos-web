@@ -19,7 +19,7 @@ function Login() {
 
             
         } catch (err) {
-            alert('Erro ao cadastrar!')
+            alert('Erro ao fazer login!')
         }
 
 
