@@ -1,0 +1,26 @@
+.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button>button{
+    background-color: #E2AC21;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 450px;
+    height: 60px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #E2AC21;
+    transition: .3s ease-in-out;
+    font-size: 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.button>button:hover{
+    scale: 110%;
+    background-color: #a26a0a;
+}
