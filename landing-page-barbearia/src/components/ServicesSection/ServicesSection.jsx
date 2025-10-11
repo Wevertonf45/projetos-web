@@ -1,5 +1,5 @@
 import './ServicesSection.css'
-import ServicesCard from '../ui/Cards/ServicesCard'
+import ServicesCard from '../ui/Cards/ServicesCard/ServicesCard'
 
 // Ícones — pode usar Font Awesome, react-icons, SVGs etc.
 import { FaCut, FaLayerGroup, FaStar } from 'react-icons/fa'
