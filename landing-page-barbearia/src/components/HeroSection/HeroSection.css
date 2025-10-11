@@ -1,0 +1,53 @@
+.hero-section {
+    background-image: url(../../assets/hero-bg.jpg);
+    font-family: 'Montserrat';
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.text-hero-container {
+    color: white;
+    width: 650px;
+    margin-bottom: 35px;
+}
+
+.text-hero-container>h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.text-hero-container>h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #C0C0C0;
+}
+
+.sp001 {
+    color: #F59E0B;
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+
+    .text-hero-container{
+        width: 80%;
+    }
+    .text-hero-container > h1 {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
+
+    .text-hero-container > h2 {
+        font-size: 0.95rem;
+    }
+
+    .hero-section {
+        padding: 0 15px;
+    }
+
+    .hero-button > button{
+        width: 280px;
+    }
+}
