@@ -8,11 +8,10 @@ div>button{
     letter-spacing: 2px;
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 0 0 10px #F59E0B;
     transition: .3s ease-in-out;
 }
 
 div>button:hover{
-    background-color: #c9830a;
+    background-color: #905e07;
     box-shadow: none;
 }

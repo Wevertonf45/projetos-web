@@ -3,6 +3,7 @@
     font-family: 'Montserrat';
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
+    background-repeat: no-repeat;
 }
 
 .text-hero-container {
