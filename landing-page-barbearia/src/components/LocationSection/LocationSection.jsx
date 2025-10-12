@@ -7,7 +7,7 @@ function LocationSection() {
     return (
         <Section className='location-section'>
             <div className='text-location-container'>
-                <h2>Onde estamos</h2>
+                <h2>Onde <span>estamos</span></h2>
                 <p>Venha nos visitar e viva a experiência Corte & Arte.</p>
             </div>
 

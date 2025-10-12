@@ -1,6 +1,7 @@
 import './App.css'
 import AboutSection from './components/AboutSection/AboutSection'
 import CTASection from './components/CTASection/CTASection'
+import Footer from './components/Footer/Footer'
 import Gallery from './components/GallerySection/GallerySection'
 import HeroSection from './components/HeroSection/HeroSection'
 import LocationSection from './components/LocationSection/LocationSection'
@@ -17,6 +18,7 @@ function App() {
       <TestimonialsSection />
       <LocationSection />
       <CTASection />
+      <Footer />
     </main>
   )
 }

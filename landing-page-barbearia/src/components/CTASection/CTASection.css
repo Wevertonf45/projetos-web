@@ -1,0 +1,25 @@
+.cta-section {
+    background-color: #0A0A0A;
+    color: white;
+    position: relative;
+}
+
+.cta-text{
+    margin-top: 80px;
+}
+
+.cta-text>h2 {
+    font-size: 3.4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cta-text>h2>span {
+    color: var(--amarelo);
+}
+
+.cta-text>p {
+    color: #c0c0c0;
+    text-align: center;
+    margin-bottom: 50px;
+}

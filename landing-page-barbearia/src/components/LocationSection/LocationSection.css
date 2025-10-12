@@ -1,34 +1,37 @@
-.location-section{
-    display: block;
-    background-color: #1F1F1F;
-    color: white;
-    padding: 80px 0;
+.location-section {
+  display: block;
+  background-color: #1F1F1F;
+  color: white;
+  padding: 80px 0;
 }
 
-.text-location-container{
-    margin: 65px 0;
+.text-location-container {
+  margin: 65px 0;
 }
 
-.text-location-container>h2{
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 3.5rem;
+.text-location-container>h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
 }
 
-.text-location-container>p{
-    text-align: center;
-    font-size: 18px;
-    color: #c0c0c0;
+.text-location-container>h2>span{
+    color: #F59E0B;
+}
+.text-location-container>p {
+  text-align: center;
+  font-size: 18px;
+  color: #c0c0c0;
 }
 
-.map-container{
-    display: flex;
-    padding: 0 80px;
-    gap: 60px;
+.map-container {
+  display: flex;
+  padding: 0 80px;
+  gap: 60px;
 }
 
-.card-location-container{
-    width: 50%;
+.card-location-container {
+  width: 50%;
 }
 
 @media (max-width: 480px) {
@@ -41,7 +44,7 @@
     margin: 40px 0;
   }
 
-  .text-location-container > h2 {
+  .text-location-container>h2 {
     font-size: 1.8rem;
   }
 
@@ -49,7 +52,7 @@
     height: 300px;
   }
 
-  .map-container{
+  .map-container {
     padding: 0 20px;
     flex-direction: column;
     justify-content: center;

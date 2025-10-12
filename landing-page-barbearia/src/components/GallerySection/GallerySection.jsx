@@ -13,8 +13,7 @@ const images = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6];
 function Gallery() {
     return (
         <Section className="gallery-section">
-            <div className="gallery-container">
-                <div className="gallery-header">
+                <div className="text-gallery-container">
                     <h2>Transformações que <span>falam por si</span></h2>
                     <p>Confira o resultado de quem já passou pela Corte & Arte. Cada corte, uma identidade.</p>
                 </div>
@@ -34,7 +33,6 @@ function Gallery() {
                         </div>
                     ))}
                 </div>
-            </div>
         </Section>
     );
 }

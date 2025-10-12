@@ -9,6 +9,7 @@
   width: 100%;
   align-items: flex-start;
   transition: all 0.3s ease;
+  margin-bottom: 10px;
 }
 
 .contact-card:hover {
