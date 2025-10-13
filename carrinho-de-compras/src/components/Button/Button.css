@@ -1,0 +1,14 @@
+button{
+    background-color: var(--azul-claro);
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &:hover{
+        background-color: var(--roxo-azulado);
+    }
+}
