@@ -1,7 +1,7 @@
-import Button from '../Button/Button'
+import Button from '../../ui/Button/Button'
 import { useState } from 'react'
 import './NavBar.css'
-import Cart from '../Cart/Cart'
+import Cart from '../../ui/Cart/Cart'
 
 function NavBar() {
     const [open, setOpen] = useState(false)

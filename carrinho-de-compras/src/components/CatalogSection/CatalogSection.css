@@ -18,6 +18,7 @@ h2 {
 
 .products-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -59,4 +60,35 @@ h2 {
     justify-content: space-between;
     align-items: center;
     margin-top: 25px;
+}
+
+.cart-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #16a34a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+  animation: fadeInOut 2s ease forwards;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+@media (max-width: 480px){
+    h2{
+        font-size: 1.8rem;
+    }
+
+    .products-container{
+        justify-content: center;
+    }
 }
