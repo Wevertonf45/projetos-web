@@ -1,0 +1,26 @@
+.form-container{
+    display: flex;
+    height: 100vh;
+    font-family: 'Inter';
+}
+
+.form-container>form{
+    background-color: transparent;
+    width: 420px;
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    color: white;
+}
+
+form>h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border-radius: 10px 10px 0 0;
+    
+    svg{
+        margin-right: 10px;
+    }
+}
