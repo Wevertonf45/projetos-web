@@ -4,7 +4,7 @@ const connection = await mysql.createConnection({
     host: 'mysql',
     user: 'root',
     password: '123456',
-    database: 'users'
+    database: 'dashboard'
 })
 
 export default connection
