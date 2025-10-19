@@ -36,7 +36,7 @@
 
 @media (max-width: 480px) {
   .location-section {
-    padding: 60px 0;
+    padding: 60px 16px;
   }
 
   .text-location-container {

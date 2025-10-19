@@ -10,7 +10,7 @@ function Footer() {
                 <p className="footer-subtitle">Criação de sites e sistemas profissionais</p>
 
                 <div className="footer-icons">
-                    <a href="https://www.instagram.com/wvt_web_desenvolvimento/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/wvt.dev/" target="_blank" rel="noopener noreferrer">
                         <FaInstagram />
                     </a>
                    

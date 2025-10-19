@@ -11,3 +11,8 @@
 :root {
   --amarelo: #F59E0B;
 }
+
+body{
+  height: 100vh;
+  width: 100vw;
+}
