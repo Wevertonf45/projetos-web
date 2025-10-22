@@ -1,0 +1,39 @@
+header{
+    padding: 20px 10px;
+    border-bottom: 1px solid #00ffff31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-header {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+
+    p {
+        font-family: 'Poppins';
+        font-size: 26px;
+        font-weight: 600;
+        text-shadow: 0 0 4px #00FFFF;
+
+        span {
+            font-weight: 600;
+            font-family: 'Inter';
+            background-color: #00FFFF;
+            color: black;
+            padding: 5px;
+            border-radius: 40%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .text-header{
+        text-align: center;
+    }
+    .button-nav{
+        display: none;
+    }
+}

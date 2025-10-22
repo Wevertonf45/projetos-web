@@ -1,0 +1,132 @@
+.hero-section {
+    padding: 0 10px;
+    margin-top: 50px;
+    border-bottom: #00ffff42 1px solid;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+        filter: blur(50px);
+        background: radial-gradient(circle, #00ffff23 0%, rgba(15, 15, 30, 0.2) 70%);
+        z-index: -1;
+        animation: pulse 3s infinite alternate;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-hero-container {
+    font-family: 'Poppins';
+    width: 650px;
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 16px;
+        line-height: 50px;
+
+        span {
+            color: #00FFFF;
+            text-shadow: 0 0 4px #00FFFF;
+        }
+    }
+
+    h2 {
+        color: #c0c0c0b9;
+        margin-bottom: 16px;
+    }
+}
+
+.ttl1 {
+    background-color: #00ffff48;
+    border: 1px solid #00ffff6e;
+    width: 200px;
+    text-align: center;
+    color: aqua;
+    border-radius: 20px;
+    padding: 5px;
+    font-weight: 600;
+    font-family: 'Inter';
+    margin-bottom: 16px;
+}
+
+.img-hero-container {
+    img {
+        width: 600px;
+    }
+}
+
+.button-container-hero {
+    margin-top: 20px;
+
+    #btn2 {
+        margin-left: 20px;
+        animation: none;
+
+        button {
+            background-color: transparent;
+            border: 1px solid #00FFFF;
+            color: #00FFFF;
+
+            &:hover {
+                background-color: #00FFFF;
+                color: #001f1f;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .text-hero-container {
+        width: 100%;
+
+        h1 {
+            font-size: 2rem;
+            line-height: 40px;
+        }
+
+        h2 {
+            font-size: 1rem;
+        }
+    }
+
+    .img-hero-container {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .button-container-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
