@@ -20,11 +20,8 @@ const FeatureSection = () => {
 
       <div className="feature-text">
         <h2>Design minimalista <span>desempenho máximo</span></h2>
-        <p className="feature-description">
-          Construído em alumínio escovado, o X-PRO Vision 15 une leveza e
-          resistência. O teclado retroiluminado e o touchpad de precisão trazem
-          uma experiência fluida e elegante.
-        </p>
+        <p> Construído em alumínio escovado, o X-PRO Vision 15 une leveza e resistência. O teclado retroiluminado e o touchpad de precisão trazem uma experiência fluida e elegante.</p>
+
         <div className="feature-grid">
           {features.map(({ icon, title, text }, index) => (
             <div key={index} className="feature-card">
