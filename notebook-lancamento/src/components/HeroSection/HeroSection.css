@@ -2,6 +2,10 @@
     padding: 0 10px;
     margin-top: 50px;
     border-bottom: #00ffff42 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
 
     &::before {
         content: '';
@@ -60,6 +64,8 @@
 }
 
 .img-hero-container {
+    overflow: hidden;
+    
     img {
         width: 600px;
     }

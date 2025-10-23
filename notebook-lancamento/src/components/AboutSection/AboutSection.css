@@ -1,6 +1,8 @@
 .about-section {
     margin-top: 50px;
+    overflow: hidden;
     font-family: 'Poppins';
+    border-bottom: #00ffff42 1px solid;
 }
 
 .text-container-about {
@@ -43,14 +45,15 @@
     color: #fff;
     border: 1px solid rgba(0, 255, 255, 0.1);
     transition: all 0.3s ease;
+
+    &:hover {
+        border-color: #00ffff;
+        cursor: pointer;
+        transform: translateY(-5px);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+    }
 }
 
-.card:hover {
-    border-color: #00ffff;
-    cursor: pointer;
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-}
 
 .spec-icon {
     font-size: 28px;
@@ -77,7 +80,7 @@
             font-size: 1.8rem;
         }
 
-        p{
+        p {
             text-align: center;
         }
     }
