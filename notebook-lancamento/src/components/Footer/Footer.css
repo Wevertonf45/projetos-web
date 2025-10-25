@@ -1,0 +1,140 @@
+.footer {
+  background-color: #0b1622;
+  color: #b0b8c1;
+  font-family: "Poppins", sans-serif;
+  padding: 40px 60px 20px;
+  border-top: 1px solid #00ffff42;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo-icon {
+  background-color: #00ffff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.footer-section h4 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section a {
+  color: #b0b8c1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #00ffff;
+}
+
+.footer-social a {
+  background-color: #111d2b;
+  color: #b0b8c1;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 8px;
+  display: inline-flex;
+  transition: background 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1a2636;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: #8a97a5;
+}
+
+/* Responsividade extra para telas pequenas (até 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 20px 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-section {
+    min-width: 100%;
+  }
+
+  .footer-section h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-section p,
+  .footer-section li,
+  .footer-section a {
+    font-size: 0.85rem;
+  }
+
+  .footer-logo {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .footer-logo-icon {
+    font-size: 0.85rem;
+    padding: 5px 8px;
+  }
+
+  .footer-social a {
+    padding: 6px;
+    margin: 0 5px;
+  }
+
+  .footer-bottom {
+    font-size: 0.75rem;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,128 @@
+.testimonials-section {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #00ffff42 1px solid;
+}
+
+.testimonials-header {
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.2;
+
+        span {
+            color: #00ffff;
+            text-shadow: 0 0 10px #00ffff;
+        }
+    }
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonial-card {
+    background-color: #0b1224;
+    border-radius: 10px;
+    width: 320px;
+    padding: 25px;
+    border: 1px solid transparent;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #00ffff;
+    cursor: pointer;
+}
+
+.stars {
+    color: #00ffff;
+    margin-bottom: 15px;
+}
+
+.star {
+    margin-right: 3px;
+}
+
+.testimonial-text {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: #fff;
+}
+
+.testimonial-author span {
+    color: #b3b3b3;
+    font-size: 0.85rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+    .testimonials-section {
+        padding: 30px 15px;
+    }
+
+    .testimonials-header {
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .testimonials-header h2 {
+        font-size: 1.8rem;
+        line-height: 1.3;
+        padding: 0 10px;
+    }
+
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .stars {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-author strong {
+        font-size: 0.95rem;
+    }
+
+    .testimonial-author span {
+        font-size: 0.8rem;
+    }
+}
