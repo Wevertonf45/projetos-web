@@ -5,8 +5,8 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <h2 className="footer-title">WVT WEB DESENVOLVIMENTO</h2>
-                <p className="footer-subtitle">Criação de sites e sistemas profissionais</p>
+                <h2 className="footer-title">Por: Weverton_Santos</h2>
+                <p className="footer-subtitle">Criação de sites, apps e sistemas profissionais</p>
 
                 <div className="footer-icons">
                     <a href="https://www.instagram.com/wvt.dev/" target="_blank" rel="noopener noreferrer">
@@ -19,7 +19,7 @@ function Footer() {
                 </div>
 
                 <p className="footer-copy">
-                    © 2025 wvt_web_desenvolvimento – Todos os direitos reservados
+                    © 2025 Weverton_Santos – Todos os direitos reservados
                 </p>
             </div>
         </footer>
