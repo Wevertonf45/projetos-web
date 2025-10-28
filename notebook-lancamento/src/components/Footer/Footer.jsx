@@ -50,7 +50,7 @@ function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>© 2025 WVT WEB DESENVOLVIMENTO. Todos os direitos reservados.</p>
+                <p>© 2025 Weverton_Santos. Todos os direitos reservados.</p>
             </div>
         </footer>
     );
