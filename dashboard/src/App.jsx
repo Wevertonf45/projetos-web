@@ -1,11 +1,11 @@
-import Graphic from "./components/graphic"
+import GraphicPage from "./pages/GraphicPage.jsx"
 
 
 function App() {
 
   return (
     <>
-    <Graphic />
+      <GraphicPage />
     </>
   )
 }
