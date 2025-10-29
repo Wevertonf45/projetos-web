@@ -5,11 +5,11 @@ function NavBar() {
         <header className="text-white border-b border-sec/20 p-3">
             <div>
                 <div className="flex items-center mb-2">
-                    <div className="border border-sec rounded-xl flex justify-center items-center mr-2 p-1">
+                    <div className="border border-sec rounded-xl flex justify-center items-center mr-5 p-1 :hidden">
                         <BarChart3 className="text-sec h-8 w-8" />
                     </div>
                     
-                    <h1 className="text-4xl font-bold">Tech<span className="text-sec font-bold">Control</span></h1>
+                    <h1 className="text-4xl font-bold">WVT<span className="text-sec font-bold">Control</span></h1>
                 </div>
 
                 <h2 className="text-2xl font-bold mb-1">Painel de Gestão Financeira Inteligente</h2>

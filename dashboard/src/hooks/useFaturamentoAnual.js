@@ -8,7 +8,7 @@ function useFaturamentoAnual() {
     useEffect(() => {
         async function getFaturamentoAnual() {
             try {
-                const response = await api.get('/faturamento')
+                const response = await api.get('/faturamento-anual')
                 setFaturamentoAnual(response.data.values)
 
             } catch (error) {
