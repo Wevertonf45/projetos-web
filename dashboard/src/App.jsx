@@ -1,12 +1,13 @@
-import GraphicPage from "./pages/GraphicPage.jsx"
+import { BrowserRouter } from "react-router-dom"
+import AppRoutes from "./routes/AppRoutes.jsx"
 
 
 function App() {
 
   return (
-    <>
-      <GraphicPage />
-    </>
+    <BrowserRouter>
+      <AppRoutes />
+    </BrowserRouter>
   )
 }
 
