@@ -6,9 +6,10 @@
     --color-terc: #10192D;
     --color-text: #c0c0c0;
     --color-quar: #252E37;
-
     --color-t1: #0E222D;
     --color-t2: #0476AE;
+
+    --breakpoint-xs: (max-width: 480px);
 }
 
 body {

@@ -1,9 +1,22 @@
 import { LineChart, BarChart, Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts";
-import useFaturamentoAnual from "../../hooks/useFaturamentoAnual.js";
 
 function Graphic() {
-    const faturamentoAnual = useFaturamentoAnual();
-     const faturamentoMesAtual = [
+    const faturamentoAnual = [
+        { mes: "Janeiro", faturamento: 12000, gastos: 8000 },
+        { mes: "Fevereiro", faturamento: 15000, gastos: 9500 },
+        { mes: "Março", faturamento: 18000, gastos: 11000 },
+        { mes: "Abril", faturamento: 14000, gastos: 9000 },
+        { mes: "Maio", faturamento: 20000, gastos: 12000 },
+        { mes: "Junho", faturamento: 17000, gastos: 10000 },
+        { mes: "Julho", faturamento: 19000, gastos: 11500 },
+        { mes: "Agosto", faturamento: 22000, gastos: 13000 },
+        { mes: "Setembro", faturamento: 16000, gastos: 9500 },
+        { mes: "Outubro", faturamento: 21000, gastos: 12500 },
+        { mes: "Novembro", faturamento: 25000, gastos: 14000 },
+        { mes: "Dezembro", faturamento: 30000, gastos: 16000 }
+    ];
+
+    const faturamentoMesAtual = [
         { semana: "sem1", faturamento: 20000, gastos: 15000 },
         { semana: "sem2", faturamento: 22000, gastos: 16000 },
         { semana: "sem3", faturamento: 21000, gastos: 15500 },

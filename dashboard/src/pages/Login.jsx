@@ -12,7 +12,6 @@ function Login() {
                     <Shield className="text-t2 h-12 w-12" />
                 </div>
 
-
                 <h1 className="font-bold text-[36px]">Acesso Seguro</h1>
                 <h2 className="text-white/50 font-bold ">Entre com suas credencias</h2>
             </div>
