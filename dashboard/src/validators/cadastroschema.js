@@ -1,0 +1,7 @@
+import * as yup from 'yup';
+
+export const cadastroSchema = yup.object({
+    name: yup.string().required('O nome é obrigatório!'),
+    email: yup.string().email('Informe um e-mail válido').required('O e-mail é obrigatório!'),
+    password: yup.string().required('A senha é obrigatória!'),
+}).required();

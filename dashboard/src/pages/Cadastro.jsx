@@ -1,10 +1,27 @@
 import { Shield } from "lucide-react";
-import Form from "../components/ui/Form";
-import Input from "../components/ui/Input";
-import Button from "../components/ui/Button";
-import Link from "../components/ui/link";
+import { Form, Input, Button, Link } from "../components/ui";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { cadastroSchema } from "../validators/cadastroschema";
+import { api } from "../services/api";
+import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
+    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(cadastroSchema) })
+    const navigate = useNavigate()
+
+    const enviar = async (data) => {
+        try {
+            await api.post('/cadastro', data)
+            alert('Cadastro feito com sucesso!')
+            navigate('/')
+
+        } catch (error) {
+            console.log(error)
+            alert('Erro ao cadastrar usuário!')
+        }
+    }
+
     return (
         <main className="flex flex-col justify-center items-center w-full h-full">
             <div className="flex flex-col justify-center items-center mb-5 mt-10">
@@ -16,11 +33,27 @@ function Cadastro() {
                 <h2 className="text-white/50 font-bold ">Entre com suas credencias</h2>
             </div>
 
-            <Form title='Obter acesso ao sistema'>
-                <Input type="text" placeholder="Nome" />
-                <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Senha" />
+            <Form onSubmit={handleSubmit(enviar)} title='Obter acesso ao sistema'>
+                <Input type="text" placeholder="Nome" name="name" register={register} autocomplete="username" />
+                <div className="flex justify-center items-center mt-[-11px] mb-[7px]">
+                    <span className="text-red-500 font-bold">{errors.name?.message}</span>
+                </div>
+
+
+                <Input type="email" placeholder="Email" name="email" register={register} autocomplete="email" />
+                <div className="flex justify-center items-center mt-[-11px] mb-[7px]">
+                    <span className="text-red-500 font-bold">{errors.email?.message}</span>
+                </div>
+
+
+                <Input type="password" placeholder="Senha" name="password" register={register} autocomplete="current-password" />
+                <div className="flex justify-center items-center mt-[-11px] mb-[7px]">
+                    <span className="text-red-500 font-bold">{errors.password?.message}</span>
+                </div>
+
+
                 <Button text='Cadastrar'></Button>
+
                 <Link to='/login' text='Já tem acesso? Entrar'></Link>
             </Form>
         </main>
