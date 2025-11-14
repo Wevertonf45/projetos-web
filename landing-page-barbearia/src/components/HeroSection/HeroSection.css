@@ -1,46 +1,50 @@
 .hero-section {
-    background-image: url(../../assets/hero-bg.jpg);
+    background-image: url(../../assets/hero2.jpg);
     font-family: 'Montserrat';
     background-color: rgba(0, 0, 0, 0.5);
+    background-position: top;
+    background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
 }
 
 .text-hero-container {
     color: white;
-    width: 650px;
+    width: 700px;
     margin-bottom: 35px;
-}
 
-.text-hero-container>h1 {
-    text-align: center;
-    font-size: 3.5rem;
-    margin-bottom: 25px;
-    font-weight: 700;
-}
+    h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 25px;
+        font-weight: 700;
 
-.text-hero-container>h2 {
-    text-align: center;
-    font-weight: normal;
-    color: #C0C0C0;
-}
+        span {
+            color: #F59E0B;
+        }
+    }
 
-.sp001 {
-    color: #F59E0B;
+    h2 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 1.3rem;
+        color: #C0C0C0;
+    }
 }
 
 /* Celulares pequenos (até 480px) */
 @media (max-width: 480px) {
 
-    .text-hero-container{
+    .text-hero-container {
         width: 80%;
     }
-    .text-hero-container > h1 {
+
+    .text-hero-container>h1 {
         font-size: 1.8rem;
         line-height: 1.2;
     }
 
-    .text-hero-container > h2 {
+    .text-hero-container>h2 {
         font-size: 0.95rem;
     }
 
@@ -48,7 +52,7 @@
         padding: 0 15px;
     }
 
-    .hero-button > button{
+    .hero-button>button {
         width: 280px;
     }
 }

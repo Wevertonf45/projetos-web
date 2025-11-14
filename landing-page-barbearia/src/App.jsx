@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import LocationSection from './components/LocationSection/LocationSection'
 import ServicesSection from './components/ServicesSection/ServicesSection'
 import TestimonialsSection from './components/TestimonialSection/TestimonialSection'
+import PriceSection from './components/Pricesection/PriceSection'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <Gallery />
+      <PriceSection />
       <TestimonialsSection />
       <LocationSection />
       <CTASection />

@@ -10,7 +10,7 @@ function CTASection() {
         <p> Reserve seu horário e venha descobrir por que a Corte & Arte é referência em estilo e autenticidade.</p>
       </div>
 
-      <Button className='hero-button' onClick={() => window.open('https://wa.me/000000000000', '_blank')} text='📅 AGENDAR AGORA' />
+      <Button className='hero-button' onClick={() => window.open('https://wa.me/000000000000', '_blank')} text='AGENDAR AGORA' />
     </Section>
   )
 }

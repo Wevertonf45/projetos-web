@@ -1,34 +1,35 @@
-.about-section{
+.about-section {
     background-color: #1F1F1F;
     color: white;
 }
 
-.text-container-about>h2{
-    font-size: 3.5rem;
-    margin-bottom: 35px;
-    text-align: center;
+.text-container-about {
+    width: 650px;
+
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 35px;
+        text-align: center;
+
+        span {
+            color: #F59E0B;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 35px;
+        text-align: justify;
+    }
 }
 
-.text-container-about>h2>span{
-    color: #F59E0B;
-}
 
-.text-container-about{
-    width: 550px;
-}
-
-.text-container-about>p{
-    font-size: 20px;
-    margin-bottom: 35px;
-    text-align: center;
-}
-
-@media (max-width: 480px){
-    .text-container-about{
+@media (max-width: 480px) {
+    .text-container-about {
         width: 80%;
     }
 
-    .text-container-about>h2{
+    .text-container-about>h2 {
         font-size: 1.8rem;
     }
 }

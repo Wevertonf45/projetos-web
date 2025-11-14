@@ -1,4 +1,4 @@
-div>button{
+div>button {
     padding: 10px;
     background-color: #F59E0B;
     border: none;
@@ -6,12 +6,12 @@ div>button{
     height: 60px;
     width: 380px;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: bolder;
     cursor: pointer;
     transition: .3s ease-in-out;
-}
 
-div>button:hover{
-    background-color: #905e07;
-    box-shadow: none;
+    &:hover {
+        background-color: #905e07;
+        box-shadow: none;
+    }
 }
