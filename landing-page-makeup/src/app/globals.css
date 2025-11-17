@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme{
+  --color-prim: #f205cb;
+  --color-sec: #f279de;
+  --color-terc: #7c048c;
+}
+
+body{
+  height: 100vh;
+}
