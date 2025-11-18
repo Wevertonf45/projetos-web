@@ -1,5 +1,45 @@
 #hero-section {
-    background:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),url(/hero-makeup.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/hero-makeup.jpg);
     background-position: center;
     background-size: cover;
+}
+
+.text-hero-container {
+    width: 600px;
+    margin-bottom: 20px;
+
+    h1 {
+        font-family: var(--font-playfair);
+        font-size: 4rem;
+        color: var(--marrom);
+        line-height: 70px;
+        margin-bottom: 20px;
+
+        span {
+            color: var(--dour);
+        }
+    }
+
+    h2 {
+        font-family: var(--font-inter);
+        color: rgb(72, 72, 72);
+        font-weight: normal;
+        font-size: 18px;
+    }
+}
+
+.button-hero-container {
+    button{
+        margin-right: 30px;
+    }
+    #btn2 {
+        background-color: white;
+        color: black;
+        border: 1px solid #C89C8D;
+
+        &:hover{
+            background-color: #C89C8D;
+            color: white;
+        }
+    }
 }
