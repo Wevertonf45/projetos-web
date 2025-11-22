@@ -1,0 +1,40 @@
+#gallery-section {
+    background-color: #F5EAE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-gallery-container {
+    h2 {
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: var(--font-playfair);
+        margin-bottom: -20px;
+
+        span{
+            color: var(--dour);
+        }
+    }
+
+    p{
+        text-align: center;
+        margin: 35px;
+        color: rgb(135, 132, 132);
+        font-family: var(--font-inter);
+    }
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 16px;
+
+    img{
+        width: 250px;
+        height: 300px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+.text-testi-container{
+    h2{
+        font-size: 3.5rem;
+        text-align: center;
+        font-family: var(--font-playfair);
+        margin-bottom: 15px;
+
+        span{
+            color: var(--dour);
+        }
+    }
+
+    p{
+        text-align: center;
+        font-family: var(--font-inter);
+        color: rgb(103, 101, 101);
+    }
+}
+
+.cards-testi-container{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

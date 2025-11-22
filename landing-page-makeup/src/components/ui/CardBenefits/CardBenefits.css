@@ -1,0 +1,50 @@
+.card-benefits-container {
+    background-color: #FAF4F2;
+    width: 320px;
+    margin-bottom: 30px;
+    padding: 40px 20px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    margin-right: 30px;
+
+    &:hover {
+        transform: scale(105%);
+    }
+
+    .icon-container {
+        margin-bottom: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #D1A576;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+
+        svg {
+            color: white;
+            font-size: 40px;
+        }
+    }
+
+    .text-card {
+        h2 {
+            color: var(--marrom);
+            font-family: var(--font-playfair);
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: var(--font-inter);
+            text-align: center;
+            color: rgb(108, 107, 107);
+        }
+    }
+}

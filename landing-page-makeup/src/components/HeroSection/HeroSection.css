@@ -6,7 +6,7 @@
 
 .text-hero-container {
     width: 600px;
-    margin-bottom: 20px;
+    margin: 40px 0 20px 0;
 
     h1 {
         font-family: var(--font-playfair);

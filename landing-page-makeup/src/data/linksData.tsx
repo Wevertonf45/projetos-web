@@ -1,4 +1,9 @@
-export const links = [
+interface links {
+    url: string,
+    text: string
+}
+
+export const links: links[] = [
     {
         url: '#services',
         text: 'Serviços'
