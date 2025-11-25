@@ -1,0 +1,119 @@
+#about-section {
+    background-color: #F1E2DB;
+    display: flex;
+    justify-content: center;
+}
+
+.img-about-container {
+    margin-right: 30px;
+
+    img {
+        width: 520px;
+        border-radius: 10px;
+    }
+}
+
+.text-about-container {
+    width: 550px;
+
+    h2 {
+        color: var(--marrom);
+        font-size: 3rem;
+        line-height: 50px;
+        margin-bottom: 25px;
+        font-family: var(--font-playfair);
+
+        span {
+            color: var(--dour);
+        }
+    }
+
+    p {
+        font-family: var(--font-inter);
+        margin-bottom: 20px;
+        color: rgb(109, 109, 109);
+    }
+
+    .metrics {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .item {
+            margin-right: 20px;
+
+            .p1 {
+                text-align: center;
+                font-family: var(--font-playfair);
+                color: var(--dour);
+                font-size: 30px;
+                font-weight: 600;
+            }
+
+            .p2 {
+                text-align: center;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #about-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-about-container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 320px;
+        }
+    }
+
+    .text-about-container {
+        width: 100%;
+
+        h2 {
+            font-size: 1.8rem;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .metrics {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            .item {
+                margin-right: 20px;
+
+                .p1 {
+                    text-align: center;
+                    font-family: var(--font-playfair);
+                    color: var(--dour);
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+
+                .p2 {
+                    text-align: center;
+                }
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -29,17 +29,45 @@
 }
 
 .button-hero-container {
-    button{
+    button {
         margin-right: 30px;
     }
+
     #btn2 {
         background-color: white;
         color: black;
         border: 1px solid #C89C8D;
 
-        &:hover{
+        &:hover {
             background-color: #C89C8D;
             color: white;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .text-hero-container {
+        width: 100%;
+        margin: 40px 0 20px 0;
+
+        h1 {
+            font-size: 1.8rem;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        h2 {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+
+    .button-hero-container {
+        display: flex;
+        justify-content: center;
+
+        button {
+            margin-right: 30px;
         }
     }
 }

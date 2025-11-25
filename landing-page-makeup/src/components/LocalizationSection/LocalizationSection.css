@@ -1,9 +1,17 @@
-.text-testi-container {
+#localization-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-location-container {
+    margin-bottom: 35px;
+
     h2 {
         font-size: 3.5rem;
         text-align: center;
         font-family: var(--font-playfair);
-        margin-bottom: 15px;
 
         span {
             color: var(--dour);
@@ -13,30 +21,30 @@
     p {
         text-align: center;
         font-family: var(--font-inter);
-        color: rgb(103, 101, 101);
+        color: rgb(93, 93, 93);
     }
 }
 
-.cards-testi-container {
-    margin-top: 35px;
+.map-container {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 @media (max-width: 480px) {
-    .text-testi-container {
+    .text-location-container {
         h2 {
             font-size: 1.8rem;
-        }
-
-        p {
-            text-align: center;
-            font-size: 15px;
+            margin-bottom: 10px;
         }
     }
 
-    .cards-testi-container {
+    .map-container {
+        display: flex;
+        align-items: center;
         flex-direction: column;
+
+        iframe{
+            width: 100%;
+        }
     }
 }

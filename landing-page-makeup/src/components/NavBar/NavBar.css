@@ -19,14 +19,14 @@ header {
         font-weight: 600;
         font-family: var(--font-playfair);
 
-        span{
+        span {
             color: var(--dour);
         }
     }
 }
 
-.navbar{
-    a{
+.navbar {
+    a {
         display: inline-block;
         margin-right: 30px;
         font-family: var(--font-inter);
@@ -34,9 +34,28 @@ header {
         color: var(--marrom);
         font-weight: 500;
 
-        &:hover{
+        &:hover {
             color: var(--dour);
             cursor: pointer;
         }
     }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0 15px;
+    }
+
+    .logo-container {
+        a {
+            font-size: 20px;
+        }
+    }
+
+    .navbar {
+        a {
+            display: none;
+        }
+    }
+
 }

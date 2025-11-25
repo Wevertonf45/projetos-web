@@ -15,8 +15,25 @@
     }
 }
 
-.cards-benefits-container{
+.cards-benefits-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .text-benefits-container {
+        width: 100%;
+
+        h2 {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+    .cards-benefits-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
