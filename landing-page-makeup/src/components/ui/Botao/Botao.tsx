@@ -3,7 +3,7 @@ import './Botao.css'
 
 interface propsbotao{
     text: string
-    id: string
+    id?: string
     onClick?: ReactEventHandler
 }
 
