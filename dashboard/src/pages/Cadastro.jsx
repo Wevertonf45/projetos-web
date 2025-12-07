@@ -3,7 +3,6 @@ import { Form, Input, Button, Link } from "../components/ui";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { cadastroSchema } from "../validators/cadastroschema";
-import { api } from "../services/api";
 import { useNavigate } from "react-router-dom";
 
 function Cadastro() {
